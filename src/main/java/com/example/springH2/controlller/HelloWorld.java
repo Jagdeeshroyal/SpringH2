@@ -1,4 +1,4 @@
-package com.example.springH2;
+package com.example.springH2.controlller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
