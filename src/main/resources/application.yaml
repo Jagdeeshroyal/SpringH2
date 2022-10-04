@@ -1,0 +1,58 @@
+
+spring:
+  profiles:
+   active : 'prod'
+  
+---
+spring:
+ profiles: dev
+ datasource:
+  url: jdbc:mysql://localhost:3306/myapp-qa
+  username: root
+  password: 123456789
+  driver-class-name: com.mysql.jdbc.Driver
+ jpa:
+  hibernate:
+   ddl-auto: update
+  properties:
+   hibernate:
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  show-sql : true
+  
+---
+  
+  
+spring:
+ profiles: qa
+ datasource:
+  url: jdbc:mysql://localhost:3306/myapp-qa
+  username: root
+  password: 123456789
+  driver-class-name: com.mysql.jdbc.Driver
+ jpa:
+  hibernate:
+   ddl-auto: update
+  properties:
+   hibernate:
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  show-sql : true
+  
+---
+
+
+spring:
+ profiles: prod
+ datasource:
+  url: jdbc:mysql://localhost:3306/myapp-prod
+  username: root
+  password: 123456789
+  driver-class-name: com.mysql.jdbc.Driver
+ jpa:
+  hibernate:
+   ddl-auto: update
+  properties:
+   hibernate:
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  show-sql : true
+  
+  
