@@ -8,4 +8,8 @@ import com.example.springH2.entity.Department;
 @Repository
 public interface DepartmentRepo extends JpaRepository<Department,Long>{
 
+	Department findByDepartmentName(String dptName);
+	
+	Department findByDepartmentNameIgnoreCase(String dptName);
+
 }
